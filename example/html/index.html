@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TendQuant 行情示例</title>
+    <script src="https://tendquant.cn/sdk/tendquant.js"></script>
+</head>
+<body>
+
+<script>
+(async () => {
+    console.log("开始初始化");
+
+    // 初始化客户端配置
+    const client = new TendQuant({
+        username: 'a2dZMmrflhY4MwRN',
+        password: '6WUc6unvD4G3VVPx4K6t2Nl5mVq4fjtu'
+    });
+
+    // 设置事件监听
+    client.onConnected(() => {
+        console.log('[System] 连接成功');
+    });
+
+    client.onConnectionLost((responseObject) => {
+        console.error('[System] 连接丢失:', responseObject.errorMessage);
+    });
+
+    client.onFailure((err) => {
+        console.error('[System] 连接失败:', err.errorMessage);
+    });
+
+    // 连接服务器
+    try {
+        await client.connect();
+        console.log('[System] 正在订阅主题...');
+        
+        const topic = 'lv1/tradeList/#';
+        await client.subscribe(topic);
+        console.log('[System] 已订阅: ' + topic);
+        
+        client.onMessage(topic, (message) => {
+            // 这里会收到所有股票的推送，直接打印
+            console.log(message.destinationName, message.payloadString);
+        });
+
+    } catch (error) {
+        console.error("[System] 初始化错误:", error);
+    }
+})();
+</script>
+</body>
+</html>
