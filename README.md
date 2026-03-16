@@ -106,14 +106,16 @@ client.unsubscribe('lv1/tradeList/000001')
 {
   "currentPrice": "10.83",
   "volume": "30.00",
-  "time": "1772780160"
+  "timestamp": "1772780160",
+  "tradeCount": "3"
 }
 ```
 | 字段名       | 类型   | 说明         |
 |--------------|--------|--------------|
 | currentPrice | String | 成交价格     |
 | volume       | String | 成交量(手)   |
-| time         | String | 时间戳(秒)   |
+| timestamp         | String | 时间戳(秒)   |
+| tradeCount   | String | 成交笔数     |
 
 ### 行情快照
 **主题**：lv1/snapshots/{code}
