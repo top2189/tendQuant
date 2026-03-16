@@ -1,5 +1,5 @@
-# A股 Level1 行情接入指南
-本指南将帮助您快速接入 [tendQuant](https://tendquant.cn) 服务，开始获取实时 A股 行情数据。
+# A股全市场行情获取
+专注于个人量化开发，快速获取A股全市场5000只股票的实时行情数据。本指南将帮助您快速接入 [tendQuant](https://tendquant.cn) 服务，开始获取实时 A股 行情数据。
 
 ## 准备工作
 1. [注册平台账户](https://tendquant.cn/register)
