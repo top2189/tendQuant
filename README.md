@@ -121,7 +121,7 @@ client.unsubscribe('lv1/tradeList/000001')
 |--------------|--------|--------------|
 | stockCode    | String | 股票代码     |
 | price        | Float  | 成交价格     |
-| volume       | Int    | 成交数量     |
+| volume       | Float  | 成交数量     |
 | limitUp      | Float  | 涨停价       |
 | limitDown    | Float  | 跌停价       |
 
