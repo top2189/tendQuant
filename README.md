@@ -213,6 +213,35 @@ client.unsubscribe('lv1/tradeList/000001')
 | volume   | Float | 委托量(手)     |
 | price    | Float | 委托价格       |
 
+### 指数行情
+```json
+{
+  "indexName": "上证指数",
+  "amplitude": 1.05,
+  "highPrice": 4065.37,
+  "yesterdayPrice": 4049.91,
+  "changePercent": 0.32,
+  "currentPrice": 4062.98,
+  "openPrice": 4053.31,
+  "change": 13.07,
+  "lowPrice": 4023.03,
+  "volumeRatio": 0.84
+}
+```
+| 字段名         | 类型   | 说明           |
+|----------------|--------|----------------|
+| indexName      | String | 指数名称       |
+| amplitude      | Float  | 振幅           |
+| highPrice      | Float  | 最高价         |
+| yesterdayPrice | Float  | 昨日收盘价     |
+| changePercent  | Float  | 涨跌幅         |
+| currentPrice   | Float  | 当前价         |
+| openPrice      | Float  | 开盘价         |
+| change         | Float  | 涨跌额         |
+| lowPrice       | Float  | 最低价         |
+| volumeRatio    | Float  | 量比           |
+
+
 ## 示例代码
 我们提供多种语言的官方 SDK，帮助您快速集成 tendQuant 服务。
 
