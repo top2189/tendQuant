@@ -107,7 +107,7 @@ client.unsubscribe('lv1/tradeList/000001')
 - 如果需要获取大量股票数据，建议使用批量订阅接口
 
 ### 成交明细
-**主题**：lv1/tradeList/{code}
+**主题**：lv1/tradeList/000001
 ```json
 {
   "stockCode": "000001",
@@ -126,7 +126,7 @@ client.unsubscribe('lv1/tradeList/000001')
 | limitDown    | Float  | 跌停价       |
 
 ### 行情快照
-**主题**：lv1/snapshots/{code}
+**主题**：lv1/snapshots/000001
 ```json
 {
   "currentPrice": 10.96,
@@ -185,7 +185,7 @@ client.unsubscribe('lv1/tradeList/000001')
 
 
 ### 五档盘口
-**主题**：lv1/orderBook/{code}
+**主题**：lv1/orderBook/000001
 ```json
 {
   "bid": {
@@ -214,6 +214,7 @@ client.unsubscribe('lv1/tradeList/000001')
 | price    | Float | 委托价格       |
 
 ### 指数行情
+**主题**：lv1/index/SZZS
 ```json
 {
   "indexName": "上证指数",
