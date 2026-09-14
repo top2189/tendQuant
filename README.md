@@ -65,19 +65,15 @@
 |    服务类型     | 订阅类型 | 最大订阅  |
 |----------------|---------|--------|
 | lv1 成交明细    | 单股票   | 50    |
-|                | 全市场   | 5     |
 | lv1 行情快照    | 单股票   | 50    |
-|                | 全市场   | 5     |
 | lv1 五档盘口    | 单股票   | 50    |
-|                | 全市场   | 5     |
 | lv1 指数行情    | 单股票   | 50    |
-|                | 全市场   | 5     |
 
 ### 订阅行情
 通过 MQTT 订阅主题来接收实时行情数据，以下使用Python SDK演示：
 #### 初始化客户端
 ```python
-client = Client(username="a2dZMmrflhY4MwRN", password="6WUc6unvD4G3VVPx4K6t2Nl5mVq4fjtu") 
+client = Client(username="buGOeDPWKzV0Ys5r", password="KXsUypTkYnMCR95kV3kAOZRHu0DM4bn8") 
 ```
 #### 定义消息处理回调函数
 ```python
@@ -255,15 +251,15 @@ pip install tendquant
 #### CLI 使用
 ```bash
 # 打开 cmd 命令行，输入以下命令
-tendquant -u a2dZMmrflhY4MwRN -p 6WUc6unvD4G3VVPx4K6t2Nl5mVq4fjtu -s lv1/orderBook/000001
+tendquant -u buGOeDPWKzV0Ys5r -p KXsUypTkYnMCR95kV3kAOZRHu0DM4bn8 -s lv1/orderBook/000001
 ```
 #### 使用示例
 ```python
 import time
 from tendquant import Client
 
-username = "a2dZMmrflhY4MwRN"
-password = "6WUc6unvD4G3VVPx4K6t2Nl5mVq4fjtu"
+username = "buGOeDPWKzV0Ys5r"
+password = "KXsUypTkYnMCR95kV3kAOZRHu0DM4bn8"
 
 # 创建MQTT客户端
 client = Client(
@@ -303,8 +299,8 @@ JavaScript SDK 支持浏览器环境，可以在浏览器中直接使用。
 
     // 初始化客户端配置
     const client = new TendQuant({
-        username: 'a2dZMmrflhY4MwRN',
-        password: '6WUc6unvD4G3VVPx4K6t2Nl5mVq4fjtu',
+        username: 'buGOeDPWKzV0Ys5r',
+        password: 'KXsUypTkYnMCR95kV3kAOZRHu0DM4bn8',
     });
 
     // 设置事件监听
@@ -378,8 +374,8 @@ public class JavaDemoMQTTV5 {
     }
 
     public static void main(String[] args) {
-        String username = "a2dZMmrflhY4MwRN";
-        String password = "6WUc6unvD4G3VVPx4K6t2Nl5mVq4fjtu";
+        String username = "buGOeDPWKzV0Ys5r";
+        String password = "KXsUypTkYnMCR95kV3kAOZRHu0DM4bn8";
 
         // 订阅等级，建议为2，消息仅送达一次，通过四次握手确保不丢不重
         int subQos = 2;
