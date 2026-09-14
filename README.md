@@ -54,9 +54,9 @@
 ### 认证方式
 根据用户名和密码进行身份验证。
 
-测试账号：`a2dZMmrflhY4MwRN`
+测试账号：`buGOeDPWKzV0Ys5r`
 
-测试密码：`6WUc6unvD4G3VVPx4K6t2Nl5mVq4fjtu`
+测试密码：`KXsUypTkYnMCR95kV3kAOZRHu0DM4bn8`
 
 注意：此账号为应用账号，用于 API 调用，非平台账号，正式使用时请先注册平台账号再创建应用，测试账号最大连接数为20，超过20将会断开连接。
 
