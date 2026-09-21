@@ -17,12 +17,6 @@
 |          |            | lv1/snapshots/#        | 所有股票行情快照   |
 | 股票  | 五档盘口   | lv1/orderBook/{code}   | 单只股票五档盘口   |
 |          |            | lv1/orderBook/#        | 所有股票五档盘口   |
-| ETF 基金  | 成交明细   | lv1/tradeList_etf/{code}   | 单个 ETF 成交明细   |
-|          |            | lv1/tradeList_etf/#        | 所有 ETF 成交明细   |
-| ETF 基金  | 行情快照   | lv1/snapshots_etf/{code}   | 单个 ETF 行情快照   |
-|          |            | lv1/snapshots_etf/#        | 所有 ETF 行情快照   |
-| ETF 基金  | 五档盘口   | lv1/orderBook_etf/{code}   | 单个 ETF 五档盘口   |
-|          |            | lv1/orderBook_etf/#        | 所有 ETF 五档盘口   |
 | 指数  | 指数行情   | lv1/index/{code}   | 单个指数行情快照   |
 |          |            | lv1/index/#        | 常见指数行情快照    |
 
