@@ -359,7 +359,7 @@ public class JavaDemoMQTTV5 {
         int subQos = 2;
         
         try {
-            MqttClient client = new MqttClient("wss://quant.top2189.cn/mqtt", getClientId());
+            MqttClient client = new MqttClient("ws://203.195.240.220:28588/mqtt", getClientId());
             MqttConnectionOptions options = new MqttConnectionOptions();
             options.setUserName(username);
             options.setPassword(password.getBytes());
